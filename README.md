@@ -5,6 +5,7 @@
 -------
 
 | Command | Description |
+| --- | --- |
 | **{$link}** | Класс ссылок Link |
 | **{$cart}** | Класс текущей корзины Cart |
 | **{$currency}** | Класс текущей валюты Сurrency |
