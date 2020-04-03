@@ -6,10 +6,23 @@
 
 | Command | Description |
 | --- | --- |
-| Адреса |
+| **Админка** |
+| **{$shop_name}** | Название магазина |
+| **{$logged}** | Залогинен ли покупатель (можно заменить на {$cookie→isLogged()}) |
 | **{$base_dir}** | URL базовой директории магазина (http://myshop.x/) |
 | **{$base_dir_ssl}** | URL базовой директории c использованием SSL, иначе то же, что и base_dir (https://myshop.x/) |
+| **{$content_dir}** | $protocol_content.Tools::getShopDomain().PS_BASE_URI |
+| **{$tpl_dir}** | Директория темы (/home/v/server/myshop.x/public_html/themes/prestashop/) |
+| **{$tpl_uri}** | URL темы (/themes/prestashop/) |
+| **{$modules_dir}** | Директория модулей (/modules/) |
+| **{$mail_dir}** | _MAIL_DIR_ |
+| **Страницы** |
+| **{$page_name}** | Имя страницы (соответствует названию скрипта, например index, product, best-sales, …) |
+| **{$link->getCMSLink(id)}** | ЧПУ ссылка на cms-страницу с номером id |
+| **{$link}** | Класс ссылок Link |
+| **Корзина** |
 | **{$cart}** | Класс текущей корзины Cart |
+| **{$cart_qties}** | Число товаров в корзине |
 | **{$cart->id}** | ID корзины покупателя |
 | **{$cart->id_shop_group}** | ID группы магазинов (функция нескольких магазинов) |
 | **{$cart->id_shop}** | ID магазина  (многоуровневая функция) |
@@ -27,29 +40,7 @@
 | **{$cart->date_upd}**	| Дата обновления корзины |
 | **{$cart->id_carrier}**	| ID перевозчика корзины (если выбран) |
 | **{$cart->checkedTos}** | Bool value, если условия обслуживания проверены |
-| **{$link}** | Класс ссылок Link |
-| **{$currency}** | Класс текущей валюты Сurrency |
-| **{$cookie}** | Класс Сookie |
-| **{$page_name}** | Имя страницы (соответствует названию скрипта, например index, product, best-sales, …) |
-| **{$content_dir}** | $protocol_content.Tools::getShopDomain().PS_BASE_URI |
-| **{$tpl_dir}** | Директория темы (/home/v/server/myshop.x/public_html/themes/prestashop/) |
-| **{$tpl_uri}** | URL темы (/themes/prestashop/) |
-| **{$link->getCMSLink(id)}** | ЧПУ ссылка на cms-страницу с номером id |
-| **{$modules_dir}** | Директория модулей (/modules/) |
-| **{$mail_dir}** | _MAIL_DIR_ |
-| **{$lang_iso}** | ISO-код языка |
-| **{$come_from}** | Строка запроса (http://myshop.x/product.php?id_product=1) |
-| **{$cart_qties}** | Число товаров в корзине |
-| **{$currencies}** | Массив доступных валют |
-| **{$languages}** | Массив доступных языков |
-| **{$priceDisplay}** | Метод отображения цены (с налогом, без налога) |
-| **{$add_prod_display}** | (int)Configuration::get('PS_ATTRIBUTE_CATEGORY_DISPLAY') |
-| **{$shop_name}** | Название магазина |
-| **{$roundMode}** | Режим округления |
-| **{$use_taxes}** | Используется ли налог (true/false) |
-| **{$vat_management}** | (int)Configuration::get('VATNUMBER_MANAGEMENT') |
-| **{$opc}** | (bool)Configuration::get('PS_ORDER_PROCESS_TYPE') |
-| **{$PS_CATALOG_MODE}** | Режим каталога (не доступно оформление заказа) |
+| **Директории** |
 | **{$img_ps_dir}** | Директория картинок магазина (/img/) |
 | **{$img_cat_dir}** | Директория картинок категорий магазина (/img/с/) |
 | **{$img_lang_dir}** | Директория картинок языков (/img/l/) |
@@ -63,5 +54,20 @@
 | **{$css_dir}** | Директория стилей темы (http://myshop.x/themes/prestashop/css/) |
 | **{$js_dir}** | Директория скриптов темы (http://myshop.x/themes/prestashop/js/) |
 | **{$pic_dir}** | _THEME_PROD_PIC_DIR_ |
-| **{$logged}** | Залогинен ли покупатель (можно заменить на {$cookie→isLogged()}) |
+| **Прочее** |
+| **{$customerName}**	| Имя клиента (если залогинен) |
+| **{$currency}** | Класс текущей валюты Сurrency |
+| **{$cookie}** | Класс Сookie |
+| **{$lang_iso}** | ISO-код языка |
+| **{$come_from}** | Строка запроса (http://myshop.x/product.php?id_product=1) |
+| **{$currencies}** | Массив доступных валют |
+| {$ **id_currency_cookie** }	| ID текущей валюты |
+| **{$languages}** | Массив доступных языков |
+| **{$priceDisplay}** | Метод отображения цены (с налогом, без налога) |
+| **{$add_prod_display}** | (int)Configuration::get('PS_ATTRIBUTE_CATEGORY_DISPLAY') |
+| **{$roundMode}** | Режим округления |
+| **{$use_taxes}** | Используется ли налог (true/false) |
+| **{$vat_management}** | (int)Configuration::get('VATNUMBER_MANAGEMENT') |
+| **{$opc}** | (bool)Configuration::get('PS_ORDER_PROCESS_TYPE') |
+| **{$PS_CATALOG_MODE}** | Режим каталога (не доступно оформление заказа) |
 
