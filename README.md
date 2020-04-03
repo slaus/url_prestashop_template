@@ -6,6 +6,7 @@
 
 | Command | Description |
 | --- | --- |
+| Адреса |
 | **{$base_dir}** | URL базовой директории магазина (http://myshop.x/) |
 | **{$base_dir_ssl}** | URL базовой директории c использованием SSL, иначе то же, что и base_dir (https://myshop.x/) |
 | **{$cart}** | Класс текущей корзины Cart |
