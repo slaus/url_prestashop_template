@@ -6,13 +6,30 @@
 
 | Command | Description |
 | --- | --- |
-| **{$link}** | Класс ссылок Link |
+| **{$base_dir}** | URL базовой директории магазина (http://myshop.x/) |
+| **{$base_dir_ssl}** | URL базовой директории c использованием SSL, иначе то же, что и base_dir (https://myshop.x/) |
 | **{$cart}** | Класс текущей корзины Cart |
+| **{$cart->id}** | ID корзины покупателя |
+| **{$cart->id_shop_group}** | ID группы магазинов (функция нескольких магазинов) |
+| **{$cart->id_shop}** | ID магазина  (многоуровневая функция) |
+| **{$cart->id_address_delivery}** | ID доставки адреса клиента (только если был сделан заказ) |
+| **{$cart->id_address_invoice}** | ID счета клиента по адресу (только если был сделан заказ) |
+| **{$cart->id_currency}** | ID валюты корзины |
+| **{$cart->id_customer}** | ID клиента, которому принадлежит корзина (только если клиент зарегистрирован) |
+| **{$cart->id_guest}**	| ID гостя магазина |
+| **{$cart->id_lang}** | ID языка корзины |
+| **{$cart->recycable}** | Значение Bool, если подлежит переработке, проверено для этой корзины |
+| **{$cart->gift}**	| Значение Bool, если подарок выбран для этой корзины |
+| **{$cart->gift_message}**	| Подарочное сообщение |
+| **{$cart->mobile_theme}**	| Bool value, если корзина была создана на мобильном устройстве |
+| **{$cart->date_add}**	| Дата создания корзины |
+| **{$cart->date_upd}**	| Дата обновления корзины |
+| **{$cart->id_carrier}**	| ID перевозчика корзины (если выбран) |
+| **{$cart->checkedTos}** | Bool value, если условия обслуживания проверены |
+| **{$link}** | Класс ссылок Link |
 | **{$currency}** | Класс текущей валюты Сurrency |
 | **{$cookie}** | Класс Сookie |
 | **{$page_name}** | Имя страницы (соответствует названию скрипта, например index, product, best-sales, …) |
-| **{$base_dir}** | URL базовой директории магазина (http://myshop.x/) |
-| **{$base_dir_ssl}** | URL базовой директории c использованием SSL, если его использование включено, иначе то же, что и base_dir (https://myshop.x/) |
 | **{$content_dir}** | $protocol_content.Tools::getShopDomain().PS_BASE_URI |
 | **{$tpl_dir}** | Директория темы (/home/v/server/myshop.x/public_html/themes/prestashop/) |
 | **{$tpl_uri}** | URL темы (/themes/prestashop/) |
