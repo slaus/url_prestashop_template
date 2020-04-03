@@ -7,155 +7,118 @@
 ```bash
 {$link} Класс ссылок Link
 ```
-
 ```bash
 {$cart} Класс текущей корзины Cart
 ```
-Класс текущей валюты Сurrency
 ```bash
-{$currency}
+{$currency} Класс текущей валюты Сurrency
 ```
-Класс Сookie
 ```bash
-{$cookie}
+{$cookie} Класс Сookie
 ```
-Имя страницы (соответствует названию скрипта, например index, product, best-sales, …)
 ```bash
-{$page_name}
+{$page_name} Имя страницы (соответствует названию скрипта, например index, product, best-sales, …)
 ```
-URL базовой директории магазина (http://myshop.x/)
 ```bash
-{$base_dir}
+{$base_dir} URL базовой директории магазина (http://myshop.x/)
 ```
-URL базовой директории c использованием SSL, если его использование включено, иначе то же, что и base_dir (https://myshop.x/)
 ```bash
-{$base_dir_ssl}
+{$base_dir_ssl} URL базовой директории c использованием SSL, если его использование включено, иначе то же, что и base_dir (https://myshop.x/)
 ```
-$protocol_content.Tools::getShopDomain().PS_BASE_URI 
 ```bash
-{$content_dir}
+{$content_dir} $protocol_content.Tools::getShopDomain().PS_BASE_URI
 ```
-Директория темы (/themes/prestashop/) 
 ```bash
-{$tpl_dir}
+{$tpl_dir} Директория темы (/home/v/server/myshop.x/public_html/themes/prestashop/)
 ```
-URL темы (/themes/prestashop/) 
 ```bash
-{$tpl_uri}
+{$tpl_uri} URL темы (/themes/prestashop/) 
 ```
-Директория модулей (/modules/) 
 ```bash
-{$modules_dir}
+{$modules_dir} Директория модулей (/modules/) 
 ```
-_MAIL_DIR_ 
 ```bash
-{$mail_dir}
+{$mail_dir} _MAIL_DIR_ 
 ```
-ISO-код языка 
 ```bash
-{$lang_iso}
+{$lang_iso} ISO-код языка 
 ```
-Строка запроса (http://myshop.x/product.php?id_product=1) 
 ```bash
-{$come_from}
+{$come_from} Строка запроса (http://myshop.x/product.php?id_product=1) 
 ```
-Число товаров в корзине 
 ```bash
-{$cart_qties}
+{$cart_qties} Число товаров в корзине 
 ```
-Массив доступных валют 
 ```bash
-{$currencies}
+{$currencies} Массив доступных валют
 ```
-Массив доступных языков 
 ```bash
-{$languages}
+{$languages} Массив доступных языков 
 ```
-Метод отображения цены (с налогом, без налога) 
 ```bash
-{$priceDisplay}
+{$priceDisplay} Метод отображения цены (с налогом, без налога) 
 ```
 (int)Configuration::get('PS_ATTRIBUTE_CATEGORY_DISPLAY') 
 ```bash
 {$add_prod_display}
 ```
-Название магазина 
 ```bash
-{$shop_name}
+{$shop_name} Название магазина 
 ```
-Режим округления 
 ```bash
-{$roundMode}
+{$roundMode} Режим округления 
 ```
-Используется ли налог (true/false) 
 ```bash
-{$use_taxes}
+{$use_taxes} Используется ли налог (true/false) 
 ```
-(int)Configuration::get('VATNUMBER_MANAGEMENT') 
 ```bash
-{$vat_management}
+{$vat_management} (int)Configuration::get('VATNUMBER_MANAGEMENT') 
 ```
-(bool)Configuration::get('PS_ORDER_PROCESS_TYPE') 
 ```bash
-{$opc}
+{$opc} (bool)Configuration::get('PS_ORDER_PROCESS_TYPE') 
 ```
-Режим каталога (не доступно оформление заказа) 
 ```bash
-{$PS_CATALOG_MODE}
+{$PS_CATALOG_MODE} Режим каталога (не доступно оформление заказа) 
 ```
-Директория картинок магазина (/img/) 
 ```bash
-{$img_ps_dir}
+{$img_ps_dir} Директория картинок магазина (/img/) 
 ```
-Директория картинок категорий магазина (/img/с/)
 ```bash
-{$img_cat_dir}
+{$img_cat_dir} Директория картинок категорий магазина (/img/с/)
 ```
-Директория картинок языков (/img/l/)
 ```bash
-{$img_lang_dir}
+{$img_lang_dir} Директория картинок языков (/img/l/)
 ```
-Директория картинок товаров (/img/p/)
 ```bash
-{$img_prod_dir}
+{$img_prod_dir} Директория картинок товаров (/img/p/)
 ```
-Директория картинок производителей (/img/m/)
 ```bash
-{$img_manu_dir}
+{$img_manu_dir} Директория картинок производителей (/img/m/)
 ```
-Директория картинок поставщиков (/img/su/)
 ```bash
-{$img_sup_dir}
+{$img_sup_dir} Директория картинок поставщиков (/img/su/)
 ```
-Директория картинок способов доставки (/img/s/)
 ```bash
-{$img_ship_dir}
+{$img_ship_dir} Директория картинок способов доставки (/img/s/)
 ```
-Директория картинок магазинов (/img/st/)
 ```bash
-{$img_store_dir}
+{$img_store_dir} Директория картинок магазинов (/img/st/)
 ```
-_THEME_COL_DIR_
 ```bash
-{$img_col_dir}
+{$img_col_dir} _THEME_COL_DIR_
 ```
-Директория картинок темы (http://myshop.x/themes/prestashop/img/)
 ```bash
-{$img_dir}
+{$img_dir} Директория картинок темы (http://myshop.x/themes/prestashop/img/)
 ```
-Директория стилей темы (http://myshop.x/themes/prestashop/css/)
 ```bash
-{$css_dir}
+{$css_dir} Директория стилей темы (http://myshop.x/themes/prestashop/css/)
 ```
-Директория скриптов темы (http://myshop.x/themes/prestashop/js/)
 ```bash
-{$js_dir}
+{$js_dir} Директория скриптов темы (http://myshop.x/themes/prestashop/js/)
 ```
-_THEME_PROD_PIC_DIR_
 ```bash
-{$pic_dir}
+{$pic_dir} _THEME_PROD_PIC_DIR_
 ```
-Залогинен ли покупатель (можно заменить на {$cookie→isLogged()})
 ```bash
-{$logged}
+{$logged} Залогинен ли покупатель (можно заменить на {$cookie→isLogged()})
 ```
