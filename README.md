@@ -4,17 +4,12 @@
 Действующие переменные
 -------
 
-b{$link}b Класс ссылок Link
-
-{$cart} Класс текущей корзины Cart
-
-{$currency} Класс текущей валюты Сurrency
-
-{$cookie} Класс Сookie
-
-{$page_name} Имя страницы (соответствует названию скрипта, например index, product, best-sales, …)
-
-{$base_dir} URL базовой директории магазина (http://myshop.x/)
+**{$link}** Класс ссылок Link  
+**{$cart}** Класс текущей корзины Cart  
+**{$currency}** Класс текущей валюты Сurrency  
+**{$cookie}** Класс Сookie  
+**{$page_name}** Имя страницы (соответствует названию скрипта, например index, product, best-sales, …)  
+**{$base_dir}** URL базовой директории магазина (http://myshop.x/)  
 
 {$base_dir_ssl} URL базовой директории c использованием SSL, если его использование включено, иначе то же, что и base_dir (https://myshop.x/)
 
