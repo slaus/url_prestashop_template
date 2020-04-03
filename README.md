@@ -6,7 +6,7 @@
 
 | Command | Description |
 | --- | --- |
-| **Админка** |
+| --- | **Админка** |
 | **{$shop_name}** | Название магазина |
 | **{$logged}** | Залогинен ли покупатель (можно заменить на {$cookie→isLogged()}) |
 | **{$base_dir}** | URL базовой директории магазина (http://myshop.x/) |
@@ -16,11 +16,11 @@
 | **{$tpl_uri}** | URL темы (/themes/prestashop/) |
 | **{$modules_dir}** | Директория модулей (/modules/) |
 | **{$mail_dir}** | _MAIL_DIR_ |
-| **Страницы** |
+| --- | **Страницы** |
 | **{$page_name}** | Имя страницы (соответствует названию скрипта, например index, product, best-sales, …) |
 | **{$link->getCMSLink(id)}** | ЧПУ ссылка на cms-страницу с номером id |
 | **{$link}** | Класс ссылок Link |
-| **Корзина** |
+| --- | **Корзина** |
 | **{$cart}** | Класс текущей корзины Cart |
 | **{$cart_qties}** | Число товаров в корзине |
 | **{$cart->id}** | ID корзины покупателя |
@@ -40,7 +40,7 @@
 | **{$cart->date_upd}**	| Дата обновления корзины |
 | **{$cart->id_carrier}**	| ID перевозчика корзины (если выбран) |
 | **{$cart->checkedTos}** | Bool value, если условия обслуживания проверены |
-| **Директории** |
+| --- | **Директории** |
 | **{$img_ps_dir}** | Директория картинок магазина (/img/) |
 | **{$img_cat_dir}** | Директория картинок категорий магазина (/img/с/) |
 | **{$img_lang_dir}** | Директория картинок языков (/img/l/) |
@@ -54,14 +54,14 @@
 | **{$css_dir}** | Директория стилей темы (http://myshop.x/themes/prestashop/css/) |
 | **{$js_dir}** | Директория скриптов темы (http://myshop.x/themes/prestashop/js/) |
 | **{$pic_dir}** | _THEME_PROD_PIC_DIR_ |
-| **Прочее** |
+| --- | **Прочее** |
 | **{$customerName}**	| Имя клиента (если залогинен) |
 | **{$currency}** | Класс текущей валюты Сurrency |
 | **{$cookie}** | Класс Сookie |
 | **{$lang_iso}** | ISO-код языка |
 | **{$come_from}** | Строка запроса (http://myshop.x/product.php?id_product=1) |
 | **{$currencies}** | Массив доступных валют |
-| {$ **id_currency_cookie** }	| ID текущей валюты |
+| **{$id_currency_cookie}**	| ID текущей валюты |
 | **{$languages}** | Массив доступных языков |
 | **{$priceDisplay}** | Метод отображения цены (с налогом, без налога) |
 | **{$add_prod_display}** | (int)Configuration::get('PS_ATTRIBUTE_CATEGORY_DISPLAY') |
