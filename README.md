@@ -54,7 +54,7 @@
 | **{$img_dir}** | Директория картинок темы (http://myshop.x/themes/prestashop/img/) |
 | **{$css_dir}** | Директория стилей темы (http://myshop.x/themes/prestashop/css/) |
 | **{$js_dir}** | Директория скриптов темы (http://myshop.x/themes/prestashop/js/) |
-| **{$pic_dir}** | _THEME_PROD_PIC_DIR_ |
+| **{$pic_dir}** | URL for the directory with uploaded pictures |
 | --- | **Прочее** |
 | **{$customerName}**	| Имя клиента (если залогинен) |
 | **{$currency}** | Класс текущей валюты Сurrency |
