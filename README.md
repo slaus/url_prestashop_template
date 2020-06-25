@@ -64,6 +64,7 @@
 | **{$come_from}** | Строка запроса (http://myshop.x/product.php?id_product=1) |
 | **{$currencies}** | Массив доступных валют |
 | **{$id_currency_cookie}**	| ID текущей валюты |
+| **{$currency->sign}**	| Название текущей валюты |
 | **{$languages}** | Массив доступных языков |
 | **{$priceDisplay}** | Метод отображения цены (с налогом, без налога) |
 | **{$add_prod_display}** | (int)Configuration::get('PS_ATTRIBUTE_CATEGORY_DISPLAY') |
