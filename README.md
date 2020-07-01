@@ -64,7 +64,9 @@
 | **{$come_from}** | Строка запроса (http://myshop.x/product.php?id_product=1) |
 | **{$currencies}** | Массив доступных валют |
 | **{$id_currency_cookie}**	| ID текущей валюты |
-| **{$currency->sign}**	| Название текущей валюты |
+| **{$currency->sign}**	| Название текущей валюты коротко (грн, руб, дол) |
+| **{$currency->name}**	| Название текущей валюты полностью (гривна, рубль, доллар) |
+| **{$currency->iso_code}**	| Код текущей валюты (UAH, RUR, USD, EUR) |
 | **{$languages}** | Массив доступных языков |
 | **{$priceDisplay}** | Метод отображения цены (с налогом, без налога) |
 | **{$add_prod_display}** | (int)Configuration::get('PS_ATTRIBUTE_CATEGORY_DISPLAY') |
