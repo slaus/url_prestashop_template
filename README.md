@@ -15,7 +15,7 @@
 | **{$tpl_dir}** | Директория темы (/home/v/server/myshop.x/public_html/themes/prestashop/) |
 | **{$tpl_uri}** | URL темы (/themes/prestashop/) |
 | **{$modules_dir}** | Директория модулей (/modules/) |
-| **{$mail_dir}** | _MAIL_DIR_ |
+| **{$mail_dir}** | Директория шаблонов писем (/mails/) |
 | --- | **Страницы** |
 | **{$page_name}** | Имя страницы (соответствует названию скрипта, например index, product, best-sales, …) |
 | **{$meta_title}** | Название страницы без названия магазина  {assign var=shop_name_to_trim value=" - $shop_name"}  {$meta_title\|replace:$shop_name_to_trim:''\|escape:'htmlall':'UTF-8'} |
