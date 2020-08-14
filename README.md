@@ -18,7 +18,8 @@
 | **{$mail_dir}** | Директория шаблонов писем (/mails/) |
 | --- | **Страницы** |
 | **{$page_name}** | Имя страницы (соответствует названию скрипта, например index, product, best-sales, …) |
-| **{$meta_title}** | Название страницы без названия магазина  {assign var=shop_name_to_trim value=" - $shop_name"}  {$meta_title\|replace:$shop_name_to_trim:''\|escape:'htmlall':'UTF-8'} |
+| **{$meta_title}** | Название страницы |
+| **{assign var=shop_name_to_trim value=" - $shop_name"}  {$meta_title\|replace:$shop_name_to_trim:''\|escape:'htmlall':'UTF-8'}** | Название страницы без названия магазина |
 | **{$cms->meta_title}** | Название cms-страницы |
 | **{$link->getCMSLink(id)}** | ЧПУ ссылка на cms-страницу с номером id |
 | **{$link}** | Класс ссылок Link |
