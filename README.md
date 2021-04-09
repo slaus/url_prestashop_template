@@ -17,6 +17,7 @@
 | **{$modules_dir}** | Директория модулей (/modules/) |
 | **{$mail_dir}** | Директория шаблонов писем (/mails/) |
 | --- | **Страницы** |
+| **{$link->getPageLink('index.php')}** | Ссылка на страницу index.php |
 | **{$page_name}** | Имя страницы (соответствует названию скрипта, например index, product, best-sales, …) |
 | **{$meta_title}** | Название страницы |
 | **{assign var=shop_name_to_trim value=" - $shop_name"}  {$meta_title\|replace:$shop_name_to_trim:''\|escape:'htmlall':'UTF-8'}** | Название страницы без названия магазина |
